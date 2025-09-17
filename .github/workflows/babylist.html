@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<!-- saved from url=(0262)file:///C:/Users/15686/Documents/BaiduSyncdisk/%E8%82%B2%E8%A7%81%E7%88%B1/%E8%90%A5%E8%BF%90%E6%96%87%E4%BB%B6/%E5%84%BF%E7%AB%A5%E4%BF%A1%E6%81%AF/%E5%B7%B4%E6%AF%94%E7%AA%9D%E5%84%BF%E7%AB%A5%E5%85%A5%E5%9B%AD%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E8%A1%A8.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>巴比窝托育园入园信息登记表</title>
+    <link rel="stylesheet" href="./巴比窝儿童入园信息收集表_files/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+        
+        .logo-header {
+            background: linear-gradient(135deg, #4a6baf 0%, #3a5a9f 100%);
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .logo-circle {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo-text {
+            text-align: center;
+        }
+        
+        .logo-text h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: white;
+        }
+        
+        .logo-text p {
+            font-size: 16px;
+            opacity: 0.9;
+            color: white;
+        }
+        
+        .logo-subtitle {
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+        
+        .form-content {
+            padding: 30px;
+        }
+        
+        .section {
+            background: #f9fafc;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border-left: 5px solid #4a6baf;
+            transition: transform 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        h2 {
+            color: #4a6baf;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #eaecef;
+            margin-bottom: 20px;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2 i {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        
+        h3 {
+            color: #6c81bb;
+            margin: 20px 0 15px;
+            font-size: 18px;
+            padding-left: 10px;
+            border-left: 3px solid #6c81bb;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #444;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            border-color: #4a6baf;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(74, 107, 175, 0.2);
+        }
+        
+        .radio-group, .checkbox-group {
+            margin: 15px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .radio-option, .checkbox-option {
+            display: flex;
+            align-items: center;
+        }
+        
+        .radio-option input, .checkbox-option input {
+            margin-right: 8px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .form-col {
+            flex: 1;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #4a6baf 0%, #3a5a9f 100%);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(58, 90, 159, 0.3);
+        }
+        
+        .required::after {
+            content: " *";
+            color: #e22;
+        }
+        
+        .declaration {
+            background: #fff9e6;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 5px solid #ffc107;
+        }
+        
+        .signature-area {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .signature-box {
+            flex-basis: 48%;
+        }
+        
+        .logo-footer {
+            background: #f0f4ff;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e0e6ff;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        
+        .footer-logo-circle {
+            width: 50px;
+            height: 50px;
+            background: #4a6baf;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .footer-text {
+            font-size: 16px;
+            color: #4a6baf;
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .radio-group, .checkbox-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .section {
+                padding: 20px 15px;
+            }
+            
+            .form-content {
+                padding: 20px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            .signature-area {
+                flex-direction: column;
+            }
+            
+            .signature-box {
+                margin-bottom: 20px;
+            }
+            
+            .logo {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-circle {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        
+        .progress {
+            height: 100%;
+            background: linear-gradient(135deg, #4a6baf 0%, #3a5a9f 100%);
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+        
+        .section-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .section-title i {
+            transition: transform 0.3s ease;
+        }
+        
+        .collapsed .section-content {
+            display: none;
+        }
+        
+        .collapsed .section-title i {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-header">
+            <div class="logo">
+                <div class="logo-circle">
+                    <svg width="40" height="40" viewBox="0 0 40 40">
+                        <circle cx="20" cy="20" r="18" fill="#4a6baf"></circle>
+                        <text x="20" y="26" text-anchor="middle" fill="white" font-size="16" font-weight="bold">BW</text>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>巴比窝托育园</h1>
+                    <p>BABY'S WORLD 托育中心</p>
+                </div>
+            </div>
+            <div class="logo-subtitle">入园信息登记表</div>
+        </div>
+        
+        <div class="form-content">
+            <div class="progress-bar">
+                <div class="progress" id="progress" style="width: 0%;"></div>
+            </div>
+            
+            <form id="childInfoForm">
+                <!-- 一、报名班别 -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2><i class="fas fa-school"></i> 一、报名班别</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="class1" name="class" value="考拉班（0-12月）">
+                                <label for="class1">考拉班（0-12月）</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="class2" name="class" value="海豚班（12-20月）">
+                                <label for="class2">海豚班（12-20月）</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="class3" name="class" value="企鹅班（18-26月）">
+                                <label for="class3">企鹅班（18-26月）</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="class4" name="class" value="熊猫班（24-36月）">
+                                <label for="class4">熊猫班（24-36月）</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 二、宝宝的基本情况 -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2><i class="fas fa-baby"></i> 二、宝宝的基本情况</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="name" class="required">姓名</label>
+                                    <input type="text" id="name" name="name" required="">
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="gender" class="required">性别</label>
+                                    <select id="gender" name="gender" required="">
+                                        <option value="">请选择</option>
+                                        <option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="nickname">昵称</label>
+                                    <input type="text" id="nickname" name="nickname">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="birthdate" class="required">出生日期</label>
+                            <input type="date" id="birthdate" name="birthdate" required="">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="caretaker">宝宝的看护人</label>
+                            <select id="caretaker" name="caretaker">
+                                <option value="">请选择</option>
+                                <option value="老人">老人</option>
+                                <option value="保姆">保姆</option>
+                                <option value="全职妈妈">全职妈妈</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>宝宝的特点（可多选）</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="trait1" name="traits" value="怯生">
+                                    <label for="trait1">怯生</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="trait2" name="traits" value="好动">
+                                    <label for="trait2">好动</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="trait3" name="traits" value="能言善道">
+                                    <label for="trait3">能言善道</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="trait4" name="traits" value="动作不灵活">
+                                    <label for="trait4">动作不灵活</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="trait5" name="traits" value="粘人爱哭">
+                                    <label for="trait5">粘人爱哭</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="trait6" name="traits" value="脾气暴躁">
+                                    <label for="trait6">脾气暴躁</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="trait7" name="traits" value="挑食">
+                                    <label for="trait7">挑食</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="trait8" name="traits" value="孤僻">
+                                    <label for="trait8">孤僻</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="trait9" name="traits" value="喜静乖巧">
+                                    <label for="trait9">喜静乖巧</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="trait10" name="traits" value="爱打人咬人">
+                                    <label for="trait10">爱打人咬人</label>
+                                </div>
+                            </div>
+                            <label for="otherTraits">其他特点</label>
+                            <textarea id="otherTraits" name="otherTraits" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>宝宝的特长（可多选）</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="strength1" name="strengths" value="语言">
+                                    <label for="strength1">语言</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="strength2" name="strengths" value="记忆力">
+                                    <label for="strength2">记忆力</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="strength3" name="strengths" value="专注力">
+                                    <label for="strength3">专注力</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="strength4" name="strengths" value="表现力">
+                                    <label for="strength4">表现力</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="strength5" name="strengths" value="想像力">
+                                    <label for="strength5">想像力</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="strength6" name="strengths" value="好奇">
+                                    <label for="strength6">好奇</label>
+                                </div>
+                            </div>
+                            <label for="otherStrengths">其他特长</label>
+                            <textarea id="otherStrengths" name="otherStrengths" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>宝宝的弱项（可多选）</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="weakness1" name="weaknesses" value="语言">
+                                    <label for="weakness1">语言</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="weakness2" name="weaknesses" value="交往">
+                                    <label for="weakness2">交往</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="weakness3" name="weaknesses" value="自信心">
+                                    <label for="weakness3">自信心</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="weakness4" name="weaknesses" value="耐心宽容">
+                                    <label for="weakness4">耐心宽容</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="weakness5" name="weaknesses" value="习惯">
+                                    <label for="weakness5">习惯</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="weakness6" name="weaknesses" value="学新知">
+                                    <label for="weakness6">学新知</label>
+                                </div>
+                            </div>
+                            <label for="otherWeaknesses">其他弱项</label>
+                            <textarea id="otherWeaknesses" name="otherWeaknesses" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>宝宝受教育情况</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="education1" name="education" value="参加过亲子课程">
+                                    <label for="education1">参加过亲子课程</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="education2" name="education" value="一直在家">
+                                    <label for="education2">一直在家</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="otherInfo">宝宝其他情况</label>
+                            <textarea id="otherInfo" name="otherInfo" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 三、宝宝的家庭情况 -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2><i class="fas fa-home"></i> 三、宝宝的家庭情况</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <h3>1. 妈妈信息</h3>
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="motherName" class="required">妈妈姓名</label>
+                                    <input type="text" id="motherName" name="motherName" required="">
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="motherPhone" class="required">联系电话</label>
+                                    <input type="tel" id="motherPhone" name="motherPhone" required="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="motherAge">妈妈年龄</label>
+                                    <select id="motherAge" name="motherAge">
+                                        <option value="">请选择</option>
+                                        <option value="25岁以下">25岁以下</option>
+                                        <option value="25—30岁">25—30岁</option>
+                                        <option value="30岁以上">30岁以上</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="motherEducation">妈妈学历</label>
+                                    <select id="motherEducation" name="motherEducation">
+                                        <option value="">请选择</option>
+                                        <option value="大专以下">大专以下</option>
+                                        <option value="大专（含）以上">大专（含）以上</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3>2. 爸爸信息</h3>
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="fatherName">爸爸姓名</label>
+                                    <input type="text" id="fatherName" name="fatherName">
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="fatherPhone">联系电话</label>
+                                    <input type="tel" id="fatherPhone" name="fatherPhone">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="fatherAge">爸爸年龄</label>
+                                    <select id="fatherAge" name="fatherAge">
+                                        <option value="">请选择</option>
+                                        <option value="25岁以下">25岁以下</option>
+                                        <option value="25—30岁">25—30岁</option>
+                                        <option value="30岁以上">30岁以上</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="fatherEducation">爸爸学历</label>
+                                    <select id="fatherEducation" name="fatherEducation">
+                                        <option value="">请选择</option>
+                                        <option value="大专以下">大专以下</option>
+                                        <option value="大专（含）以上">大专（含）以上</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="familyAddress" class="required">家庭地址</label>
+                            <input type="text" id="familyAddress" name="familyAddress" required="">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="familyMembers">家庭成员</label>
+                            <select id="familyMembers" name="familyMembers">
+                                <option value="">请选择</option>
+                                <option value="2人">2人</option>
+                                <option value="3人">3人</option>
+                                <option value="4人">4人</option>
+                                <option value="5人及以上">5人及以上</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="familyRelationship">家庭关系</label>
+                            <select id="familyRelationship" name="familyRelationship">
+                                <option value="">请选择</option>
+                                <option value="融洽">融洽</option>
+                                <option value="一般">一般</option>
+                                <option value="不理想">不理想</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="livingEnvironment">居住环境</label>
+                            <select id="livingEnvironment" name="livingEnvironment">
+                                <option value="">请选择</option>
+                                <option value="与老人或保姆一起">与老人或保姆一起</option>
+                                <option value="与父母居住">与父母居住</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>家中是否养宠物</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="petYes" name="hasPet" value="是">
+                                    <label for="petYes">是</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="petNo" name="hasPet" value="否">
+                                    <label for="petNo">否</label>
+                                </div>
+                            </div>
+                            <label for="petDetails">宠物种类（如有）</label>
+                            <input type="text" id="petDetails" name="petDetails">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 四、母亲孕期、生产情况 -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2><i class="fas fa-female"></i> 四、母亲孕期、生产情况</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="form-group">
+                            <label for="pregnancyMental">孕期精神状况</label>
+                            <select id="pregnancyMental" name="pregnancyMental">
+                                <option value="">请选择</option>
+                                <option value="很好">很好</option>
+                                <option value="一般">一般</option>
+                                <option value="不好">不好</option>
+                            </select>
+                            <label for="pregnancyMentalOther">其他说明</label>
+                            <textarea id="pregnancyMentalOther" name="pregnancyMentalOther" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pregnancyNutrition">孕期营养状况</label>
+                            <select id="pregnancyNutrition" name="pregnancyNutrition">
+                                <option value="">请选择</option>
+                                <option value="很好">很好</option>
+                                <option value="一般">一般</option>
+                                <option value="不好">不好</option>
+                            </select>
+                            <label for="pregnancyNutritionOther">其他说明</label>
+                            <textarea id="pregnancyNutritionOther" name="pregnancyNutritionOther" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>生产情况（可多选）</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="birth1" name="birthConditions" value="早产">
+                                    <label for="birth1">早产</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="birth2" name="birthConditions" value="足月">
+                                    <label for="birth2">足月</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="birth3" name="birthConditions" value="过产期">
+                                    <label for="birth3">过产期</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="birth4" name="birthConditions" value="自然产">
+                                    <label for="birth4">自然产</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="birth5" name="birthConditions" value="产钳">
+                                    <label for="birth5">产钳</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="birth6" name="birthConditions" value="胎吸">
+                                    <label for="birth6">胎吸</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="birth7" name="birthConditions" value="窒息">
+                                    <label for="birth7">窒息</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="birth8" name="birthConditions" value="剖腹产">
+                                    <label for="birth8">剖腹产</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="fetalPosition">胎位</label>
+                                    <select id="fetalPosition" name="fetalPosition">
+                                        <option value="">请选择</option>
+                                        <option value="头位">头位</option>
+                                        <option value="臀位">臀位</option>
+                                        <option value="横位">横位</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="birthWeight">出生体重(千克)</label>
+                                    <input type="number" id="birthWeight" name="birthWeight" step="0.01" min="0">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label>是否黄疸</label>
+                                    <div class="radio-group">
+                                        <div class="radio-option">
+                                            <input type="radio" id="jaundiceYes" name="hasJaundice" value="是">
+                                            <label for="jaundiceYes">是</label>
+                                        </div>
+                                        <div class="radio-option">
+                                            <input type="radio" id="jaundiceNo" name="hasJaundice" value="否">
+                                            <label for="jaundiceNo">否</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label>是否疝气</label>
+                                    <div class="radio-group">
+                                        <div class="radio-option">
+                                            <input type="radio" id="herniaYes" name="hasHernia" value="是">
+                                            <label for="herniaYes">是</label>
+                                        </div>
+                                        <div class="radio-option">
+                                            <input type="radio" id="herniaNo" name="hasHernia" value="否">
+                                            <label for="herniaNo">否</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="deliveryAge">生产时的年龄</label>
+                            <select id="deliveryAge" name="deliveryAge">
+                                <option value="">请选择</option>
+                                <option value="25岁以下">25岁以下</option>
+                                <option value="25—30岁">25—30岁</option>
+                                <option value="30岁以上">30岁以上</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 五、生长发育史 -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2><i class="fas fa-baby-carriage"></i> 五、生长发育史</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="form-group">
+                            <label for="feeding">喂养情况</label>
+                            <select id="feeding" name="feeding">
+                                <option value="">请选择</option>
+                                <option value="母乳">母乳</option>
+                                <option value="人工">人工</option>
+                                <option value="混合">混合</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weaningTime">断乳时间（从第几个月起）</label>
+                            <input type="number" id="weaningTime" name="weaningTime" min="0">
+                        </div>
+                        
+                        <h3>大动作发育情况</h3>
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="liftHead">抬头（月）</label>
+                                    <input type="number" id="liftHead" name="liftHead" min="0">
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="rollOver">翻身（月）</label>
+                                    <input type="number" id="rollOver" name="rollOver" min="0">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="crawl">爬行（月）</label>
+                                    <input type="number" id="crawl" name="crawl" min="0">
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="sit">坐（月）</label>
+                                    <input type="number" id="sit" name="sit" min="0">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="walk">走（月）</label>
+                                    <input type="number" id="walk" name="walk" min="0">
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="smile">笑（月）</label>
+                                    <input type="number" id="smile" name="smile" min="0">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="talk">说话（月）</label>
+                            <input type="number" id="talk" name="talk" min="0">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 六、健康状态 -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2><i class="fas fa-heartbeat"></i> 六、健康状态</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="form-group">
+                            <label>曾患病症（可多选）</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="disease1" name="pastDiseases" value="水痘">
+                                    <label for="disease1">水痘</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="disease2" name="pastDiseases" value="麻疹">
+                                    <label for="disease2">麻疹</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="disease3" name="pastDiseases" value="腮腺炎">
+                                    <label for="disease3">腮腺炎</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="disease4" name="pastDiseases" value="肝炎">
+                                    <label for="disease4">肝炎</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="disease5" name="pastDiseases" value="肺炎">
+                                    <label for="disease5">肺炎</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>常患病症（可多选）</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="commonDisease1" name="commonDiseases" value="感冒">
+                                    <label for="commonDisease1">感冒</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="commonDisease2" name="commonDiseases" value="扁桃体炎">
+                                    <label for="commonDisease2">扁桃体炎</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="commonDisease3" name="commonDiseases" value="发烧抽搐">
+                                    <label for="commonDisease3">发烧抽搐</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="commonDisease4" name="commonDiseases" value="流鼻血">
+                                    <label for="commonDisease4">流鼻血</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="commonDisease5" name="commonDiseases" value="腹泻">
+                                    <label for="commonDisease5">腹泻</label>
+                                </div>
+                            </div>
+                            <label for="allergens">过敏症（如有请填写过敏源）</label>
+                            <textarea id="allergens" name="allergens" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>其他病史或病症（可多选）</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="otherDisease1" name="otherDiseases" value="先天性心脏病">
+                                    <label for="otherDisease1">先天性心脏病</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="otherDisease2" name="otherDiseases" value="皮肤病">
+                                    <label for="otherDisease2">皮肤病</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="otherDisease3" name="otherDiseases" value="贫血">
+                                    <label for="otherDisease3">贫血</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="otherDisease4" name="otherDiseases" value="骨折">
+                                    <label for="otherDisease4">骨折</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="otherDisease5" name="otherDiseases" value="疝气">
+                                    <label for="otherDisease5">疝气</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="otherDisease6" name="otherDiseases" value="习惯性脱臼">
+                                    <label for="otherDisease6">习惯性脱臼</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="otherDisease7" name="otherDiseases" value="哮喘">
+                                    <label for="otherDisease7">哮喘</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="otherDisease8" name="otherDiseases" value="乙肝">
+                                    <label for="otherDisease8">乙肝</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="otherDisease9" name="otherDiseases" value="癫痫">
+                                    <label for="otherDisease9">癫痫</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="otherDisease10" name="otherDiseases" value="自闭症">
+                                    <label for="otherDisease10">自闭症</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="otherDisease11" name="otherDiseases" value="多动症">
+                                    <label for="otherDisease11">多动症</label>
+                                </div>
+                            </div>
+                            <label for="diseaseHistory">请填写病史详情及发病时间</label>
+                            <textarea id="diseaseHistory" name="diseaseHistory" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 七、饮食状态 -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2><i class="fas fa-utensils"></i> 七、饮食状态</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="form-group">
+                            <label for="dietHabits">饮食的习惯</label>
+                            <textarea id="dietHabits" name="dietHabits" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="favoriteFoods">喜爱的食品</label>
+                            <textarea id="favoriteFoods" name="favoriteFoods" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 八、生活环境 -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2><i class="fas fa-house-user"></i> 八、生活环境</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="form-group">
+                            <label for="primaryCaretaker">看护人</label>
+                            <select id="primaryCaretaker" name="primaryCaretaker">
+                                <option value="">请选择</option>
+                                <option value="父母">父母</option>
+                                <option value="祖（外祖）父母">祖（外祖）父母</option>
+                                <option value="保姆">保姆</option>
+                                <option value="外人">外人</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="caretakerEducation">养育者文化程度</label>
+                            <select id="caretakerEducation" name="caretakerEducation">
+                                <option value="">请选择</option>
+                                <option value="大专以下">大专以下</option>
+                                <option value="大专（含）以上">大专（含）以上</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fatherParenting">养育方法 - 父亲</label>
+                            <textarea id="fatherParenting" name="fatherParenting" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="motherParenting">养育方法 - 母亲</label>
+                            <textarea id="motherParenting" name="motherParenting" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="otherParenting">养育方法 - 其他人</label>
+                            <textarea id="otherParenting" name="otherParenting" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="communicationTime">养育者与儿童沟通时间</label>
+                            <select id="communicationTime" name="communicationTime">
+                                <option value="">请选择</option>
+                                <option value="长">长</option>
+                                <option value="短">短</option>
+                                <option value="没有">没有</option>
+                                <option value="偶尔">偶尔</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="livingSpace">生活空间</label>
+                            <select id="livingSpace" name="livingSpace">
+                                <option value="">请选择</option>
+                                <option value="大">大</option>
+                                <option value="中">中</option>
+                                <option value="小">小</option>
+                                <option value="经常换地方">经常换地方</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="communityEnvironment">小区环境</label>
+                            <select id="communityEnvironment" name="communityEnvironment">
+                                <option value="">请选择</option>
+                                <option value="适合户外，常出去">适合户外，常出去</option>
+                                <option value="每天偶尔出去">每天偶尔出去</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="peerInteraction">同伴交往</label>
+                            <select id="peerInteraction" name="peerInteraction">
+                                <option value="">请选择</option>
+                                <option value="很多，每天">很多，每天</option>
+                                <option value="很少">很少</option>
+                                <option value="一般">一般</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 九、习惯个性 -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2><i class="fas fa-smile"></i> 九、习惯个性</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="form-group">
+                            <label for="playmates">经常一起玩的伙伴</label>
+                            <textarea id="playmates" name="playmates" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fears">特别害怕的事情</label>
+                            <textarea id="fears" name="fears" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="favoriteActivities">最喜欢的活动</label>
+                            <textarea id="favoriteActivities" name="favoriteActivities" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="commonToys">最常玩的玩具</label>
+                            <textarea id="commonToys" name="commonToys" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sleepHabits">特殊的睡眠时间(习惯)</label>
+                            <textarea id="sleepHabits" name="sleepHabits" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="activityPreference">偏向安静还是运动</label>
+                            <select id="activityPreference" name="activityPreference">
+                                <option value="">请选择</option>
+                                <option value="安静">安静</option>
+                                <option value="运动">运动</option>
+                                <option value="两者均衡">两者均衡</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="specialCare">需要特别照顾的地方</label>
+                            <textarea id="specialCare" name="specialCare" rows="2"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 十、生活自理情况 -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2><i class="fas fa-hands-helping"></i> 十、生活自理情况</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="form-group">
+                            <label>生活自理能力（可多选）</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="ability1" name="selfCareAbilities" value="会自己拿勺吃饭">
+                                    <label for="ability1">会自己拿勺吃饭</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="ability2" name="selfCareAbilities" value="自己独立吃饭">
+                                    <label for="ability2">自己独立吃饭</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="ability3" name="selfCareAbilities" value="良好进餐习惯">
+                                    <label for="ability3">良好进餐习惯</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="toiletTrained">有大小便会表达</label>
+                                    <select id="toiletTrained" name="toiletTrained">
+                                        <option value="">请选择</option>
+                                        <option value="是">是</option>
+                                        <option value="否">否</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="regularBowel">每日大便规律</label>
+                                    <select id="regularBowel" name="regularBowel">
+                                        <option value="">请选择</option>
+                                        <option value="是">是</option>
+                                        <option value="否">否</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bowelTime">规律的时间</label>
+                            <input type="text" id="bowelTime" name="bowelTime">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>爱好（可多选）</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="hobby1" name="hobbies" value="喜欢听音乐">
+                                    <label for="hobby1">喜欢听音乐</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="hobby2" name="hobbies" value="喜欢看书、看电视">
+                                    <label for="hobby2">喜欢看书、看电视</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="hobby3" name="hobbies" value="喜欢自己动手玩玩具">
+                                    <label for="hobby3">喜欢自己动手玩玩具</label>
+                                </div>
+                            </div>
+                            <label for="otherHobbies">其他爱好</label>
+                            <textarea id="otherHobbies" name="otherHobbies" rows="2"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="adaptation">对新环境</label>
+                            <select id="adaptation" name="adaptation">
+                                <option value="">请选择</option>
+                                <option value="很快适应">很快适应</option>
+                                <option value="适应较慢">适应较慢</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>情绪表现（可多选）</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="emotion1" name="emotions" value="爱笑">
+                                    <label for="emotion1">爱笑</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="emotion2" name="emotions" value="爱哭">
+                                    <label for="emotion2">爱哭</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="emotion3" name="emotions" value="爱生闷气">
+                                    <label for="emotion3">爱生闷气</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="emotion4" name="emotions" value="爱发脾气">
+                                    <label for="emotion4">爱发脾气</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="emotion5" name="emotions" value="怕生、胆小">
+                                    <label for="emotion5">怕生、胆小</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>生活习惯（可多选）</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="habit1" name="habits" value="怕冷">
+                                    <label for="habit1">怕冷</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="habit2" name="habits" value="怕热">
+                                    <label for="habit2">怕热</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="habit3" name="habits" value="多汗">
+                                    <label for="habit3">多汗</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="habit4" name="habits" value="易发烧">
+                                    <label for="habit4">易发烧</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="habit5" name="habits" value="易上火">
+                                    <label for="habit5">易上火</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 十一、声明 -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2><i class="fas fa-file-signature"></i> 十一、声明</h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="declaration">
+                            <p>以上所填信息属实，如有不符，后果自负。</p>
+                        </div>
+                        
+                        <div class="signature-area">
+                            <div class="signature-box">
+                                <div class="form-group">
+                                    <label for="parentSignature" class="required">家长签字</label>
+                                    <input type="text" id="parentSignature" name="parentSignature" required="">
+                                </div>
+                            </div>
+                            <div class="signature-box">
+                                <div class="form-group">
+                                    <label for="signDate" class="required">日期</label>
+                                    <input type="date" id="signDate" name="signDate" required="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> 提交信息</button>
+            </form>
+        </div>
+        
+        <div class="logo-footer">
+            <div class="footer-logo">
+                <div class="footer-logo-circle">BW</div>
+                <div class="footer-text">巴比窝托育中心 · BABY'S WORLD</div>
+            </div>
+            <div class="contact-info">联系电话: 18285096297 | 地址: 贵阳市小河巴比窝</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('childInfoForm');
+            const progressBar = document.getElementById('progress');
+            const sections = document.querySelectorAll('.section');
+            
+            // 更新进度条
+            function updateProgress() {
+                const totalFields = form.querySelectorAll('input, select, textarea').length;
+                const filledFields = Array.from(form.querySelectorAll('input, select, textarea')).filter(field => {
+                    if (field.type === 'checkbox' || field.type === 'radio') {
+                        return field.checked;
+                    } else {
+                        return field.value !== '';
+                    }
+                }).length;
+                
+                const progress = (filledFields / totalFields) * 100;
+                progressBar.style.width = `${progress}%`;
+            }
+            
+            // 为所有表单元素添加事件监听
+            form.querySelectorAll('input, select, textarea').forEach(element => {
+                element.addEventListener('change', updateProgress);
+                element.addEventListener('input', updateProgress);
+            });
+            
+            // 初始更新进度条
+            updateProgress();
+            
+            // 折叠/展开功能
+            document.querySelectorAll('.section-title').forEach(title => {
+                title.addEventListener('click', function() {
+                    const section = this.parentElement;
+                    section.classList.toggle('collapsed');
+                });
+            });
+            
+            // 表单提交
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // 这里可以添加表单验证逻辑
+                let isValid = true;
+                form.querySelectorAll('[required]').forEach(field => {
+                    if (!field.value) {
+                        isValid = false;
+                        field.style.borderColor = 'red';
+                    } else {
+                        field.style.borderColor = '';
+                    }
+                });
+                
+                if (isValid) {
+                    // 模拟提交成功
+                    alert('信息提交成功！感谢您的填写。');
+                    // 实际应用中这里应该将数据发送到服务器
+                } else {
+                    alert('请填写所有必填字段（标有*的字段）');
+                }
+            });
+        });
+    </script>
+
+</body></html>
